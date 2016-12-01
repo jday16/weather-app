@@ -1,9 +1,32 @@
 /********************
 YOUR STYLES
 *******************/
+/*get Weather Icons*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css");
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
+main { 
+    background: grey;
+    margin: 1em;
+    padding: 1em;
+    /*Flexbox*/
+    display: flex;
+    flex-flow: row wrap;
+}
 
+section {
+    background: steelblue; 
+    padding: 1em;
+    margin: 1em;
+    /*flexbox Child*/ 
+    flex: 1 0 200px;
+    /*flexbox Parent*/
+}
 
 /********************
 MEDIA QUERIES
