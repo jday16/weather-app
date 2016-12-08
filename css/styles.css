@@ -1,10 +1,57 @@
-/********************
-YOUR STYLES
-*******************/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 
+main {
+    background: whitesmoke;
+    margin: 1em;
+    padding: 1em;
+    
+    /* flexbox */
+    display: flex;
+    flex-flow: row wrap;
+}
 
+div {
+    background: slategray;
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
 
+    
+    /* flexbox as child   */
+    flex: 1 0 200px;
+    
+    /* flexbox as parent   */
+}
+
+h4 {
+    text-align: center;
+    font-size: 40px;
+    color: darkslategray
+}
+
+h1, h3 {
+    color: snow;
+    font-size: 45px;
+}
+
+h2 {
+    color: moccasin;
+    
+}
+
+p {
+    color: snow;
+}
+
+button {
+    background: darkslategray;
+    color: snow;
+}
 /********************
 MEDIA QUERIES
 *******************/
@@ -16,7 +63,7 @@ MEDIA QUERIES
   
   /* Diagnostic Styling. */
   body {
-       background: blue;
+       background: white;
   }
 
 }
@@ -30,7 +77,7 @@ MEDIA QUERIES
 
   /* Diagnostic Styling. */
   body {
-       background: green;
+       background: white;
   }
 
 }
@@ -44,7 +91,7 @@ MEDIA QUERIES
 
   /* Diagnostic Styling. */
 	body {
-       background: red;
+       background: white;
 	}
 	
 }
