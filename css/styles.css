@@ -20,6 +20,20 @@ main {
     flex-flow: row wrap;
 }
 
+section {
+    background: rgba(255, 255, 255, .4);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 5%;
+    flex: 1 0 200px;
+}
+
+body {
+       background-image: url('https://unsplash.it/4887/2759?image=1029');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 div {
     background: blue;
     padding: 1em;
