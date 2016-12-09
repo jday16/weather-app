@@ -45,3 +45,40 @@ $.simpleWeather({
     }
   
   });
+
+
+// On Click, Get Geolocation, Call Weather Function
+$('.geo button').click( function() {
+     
+    //load weather using your lat/lng coordinates
+    navigator.geolocation.getCurrentPosition(function(position) {
+        getWeather(position.coords.latitude+','+position.coords.longitude); 
+    });
+   
+});
+
+// Get geolocated weather
+var getWeather = function(location) {
+    
+   $.simpleWeather({
+    location: location,
+    woeid: '',
+    unit: 'f',
+    success: function(weather) {
+      
+      // Display Data
+      $('.geo .temp').text(weather.temp);
+      $('.geo .city').text(weather.city);
+      $('.geo img').attr('src', weather.image);
+      $('.geo .title').text(weather.title);    
+        
+      // Entire weather object
+      console.log();
+    },
+    error: function(error) {
+      // Show if weather cannot be retreived
+    }
+  
+  });
+    
+};
