@@ -8,10 +8,13 @@
 
 
 main {
-    background: blue;
-    margin: 1em;
+    width: 600px;
+    height: 800px;
+    border-radius: 5%;
+    margin: 300px auto;
     padding: 1em;
-    
+    text-align: center;
+   
     /* flexbox */
     display: flex;
     flex-flow: row wrap;
